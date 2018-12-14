@@ -38,9 +38,7 @@ function GetDefaults() {
 function Dying () {
 	shred -uxzn0 $T1
 	shred -uxzn0 $T2
-	find /tmp -user $USER -type f -name $THIS.\[cd\].\?\?\?\?\?\?\?\? -mmin +1 -exec rm -v {} \; 2> /dev/null
-#FIXME
-#	ls -lt /tmp/my*
+	#find /tmp -user $USER -type f -name $THIS.\[cd\].\?\?\?\?\?\?\?\? -mmin +1 -exec rm -v {} \; 2> /dev/null
 	return $?
 }
 
