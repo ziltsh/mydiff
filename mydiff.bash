@@ -52,6 +52,9 @@ if [ ! -r $CFGFILE ]; then
 	exit
 fi
 
+# mention mysqld version # mysqld -V
+mysqld --version
+
 GetConfig	> $T1
 GetDefaults	> $T2
 
